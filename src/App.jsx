@@ -1,8 +1,75 @@
 export default function App() {
   return (
-    <div style={{ maxWidth: '900px', margin: '0 auto', padding: '20px', fontFamily: 'Arial, sans-serif' }}>
+    <div style={{ 
+      maxWidth: '900px', 
+      margin: '0 auto', 
+      padding: '40px 20px',
+      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif',
+      lineHeight: '1.6',
+      color: '#333',
+      backgroundColor: '#ffffff'
+    }}>
+      <style>{`
+        * {
+          box-sizing: border-box;
+        }
+        body {
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          margin: 0;
+          padding: 0;
+        }
+        h1 {
+          color: #2c3e50;
+          border-bottom: 3px solid #667eea;
+          padding-bottom: 15px;
+          margin-top: 0;
+          font-size: 2em;
+        }
+        h2 {
+          color: #34495e;
+          margin-top: 35px;
+          font-size: 1.3em;
+          font-weight: 600;
+        }
+        h3 {
+          color: #667eea;
+          margin-top: 20px;
+          font-size: 1.1em;
+        }
+        ul {
+          background: #f0f4ff;
+          padding: 20px 30px;
+          border-radius: 6px;
+          border-left: 4px solid #667eea;
+          box-shadow: 0 2px 8px rgba(102, 126, 234, 0.1);
+        }
+        li {
+          margin: 10px 0;
+        }
+        footer {
+          text-align: center;
+          margin-top: 50px;
+          padding-top: 25px;
+          border-top: 2px solid #e0e0e0;
+          color: #666;
+          font-size: 0.9em;
+        }
+        .meta {
+          background: #e8f0ff;
+          padding: 20px;
+          border-left: 4px solid #667eea;
+          border-radius: 6px;
+          margin: 25px 0;
+          font-size: 0.95em;
+        }
+        p {
+          margin: 15px 0;
+        }
+      `}</style>
       <h1>Privacy Policy - FamilyMap</h1>
-      <p><strong>Effective Date:</strong> February 3, 2026</p>
+      <div className="meta">
+        <p><strong>Effective Date:</strong> February 3, 2026</p>
+      </div>
 
       <h2>1. Introduction</h2>
       <p>FamilyMap ("we", "our", or "the App") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application.</p>
@@ -85,7 +152,7 @@ export default function App() {
       <h2>9. Changes to This Policy</h2>
       <p>We may update this policy periodically. Changes will be posted on this page with an updated "Effective Date".</p>
 
-      <footer style={{ marginTop: '40px', paddingTop: '20px', borderTop: '1px solid #ccc', color: '#666' }}>
+      <footer>
         <p>&copy; 2026 FamilyMap. All rights reserved.</p>
       </footer>
     </div>
